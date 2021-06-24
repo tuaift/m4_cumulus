@@ -1,22 +1,93 @@
 
-
-
-
-/* section {
-  margin-top: 23px;
-} */
-
 .logo {
   margin: 23px;
+  width: 10%;
 }
 
-.cloud-link {
-  display: block;
+.cloud-container {
+  display: flex;
   position: absolute;
-  right: 12vw;
+  top: 35px;
+  left: 0;
+  margin-right: 20px;
+  width: 100%;
+  height: calc(100% - 35px);
+}
+
+.cl-link {
+  position: absolute;
+}
+
+.cl-i {
+  display: block;
+  width: 100%;
 }
 
 .r1 {
-  width: 130%;
-  height: auto;
+  right: 2em;
+  width: 38%;
+}
+
+.r2 {
+  top: 14.2em;
+  right: 5em;
+  width: 51%;
+}
+
+.r3 {
+  top: 30.2em;
+  right: 19em;
+  width: 40%;
+}
+
+.r4 {
+  bottom: 50px;
+  right: 2em;
+  width: 41%;
+}
+
+.l1 {
+  top: 5.2em;
+  left: 2em;
+  width: 55%;
+}
+
+.l2 {
+  top: 22.5em;
+  left: 4em;
+  width: 38%;
+}
+
+.l3 {
+  top: 41.8em;
+  left: 2em;
+  width: 46%;
+}
+
+#r1 {
+    cursor: url("../img/cursor/cursor-opr.png"), auto;
+}
+
+#r2 {
+    cursor: url("../img/cursor/cursor-merch.png"), auto;
+}
+
+#r3 {
+    cursor: url("../img/cursor/cursor-works.png"), auto;
+}
+
+#r4 {
+    cursor: url("../img/cursor/cursor-address.png"), auto;
+}
+
+#l1 {
+    cursor: url("../img/cursor/cursor-issl.png"), auto;
+}
+
+#l2 {
+    cursor: url("../img/cursor/cursor-konstr.png"), auto;
+}
+
+#l3 {
+    cursor: url("../img/cursor/cursor-email.png"), auto;
 }

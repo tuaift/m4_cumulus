@@ -10,13 +10,125 @@
   <body>
     <section class="main content">
       <img class="logo" src="./img/logo.svg" alt="">
-      <div class="cloud-link">
-        <img class="r1" src="./img/main_cl/r1.svg" alt="">
+      <div class="cloud-container">
+        <div class="cl-link r1">
+          <img class="cl-i" id="r1" src="./img/main_cl/r1.png" alt="">
+        </div>
+        <div class="cl-link r2">
+          <img class="cl-i" id="r2" src="./img/main_cl/r2.png" alt="">
+        </div>
+        <div class="cl-link r3">
+          <img class="cl-i" id="r3" src="./img/main_cl/r3.png" alt="">
+        </div>
+        <div class="cl-link r4">
+          <img class="cl-i" id="r4" src="./img/main_cl/r4.png" alt="">
+        </div>
+        <div class="cl-link l1">
+          <img class="cl-i" id="l1" src="./img/main_cl/l1.png" alt="">
+        </div>
+        <div class="cl-link l2">
+          <img class="cl-i" id="l2" src="./img/main_cl/l2.png" alt="">
+        </div>
+        <div class="cl-link l3">
+          <img class="cl-i" id="l3" src="./img/main_cl/l3.png" alt="">
+        </div>
       </div>
-      <div class="main-cl-container">
-
-      </div>
-
     </section>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $("#r2").hover(function(){
+          $(this).attr('src','./img/main_cl/r2-hover.png');
+          $('.r2').css({
+            "width": "calc(51% + 85px)",
+            "right": "calc(5em - 40px)",
+            "top": "calc(14.2em - 42px)",
+          });
+          },
+          function(){
+          $(this).attr('src','./img/main_cl/r2.png');
+          $('.r2').css({
+            "width": "51%",
+            "right": "5em",
+            "top": "14.2em",
+          });
+        });
+      });
+
+      $("#r1").hover(function(){
+        $(this).attr('src','./img/main_cl/r1-hover.png');
+        $('.r1').css({
+          "width": "calc(38% + 68px)",
+          "right": "calc(2em - 26px)",
+          "top": "-42px",
+        });
+        },
+        function(){
+        $(this).attr('src','./img/main_cl/r1.png');
+        $('.r1').css({
+          "width": "38%",
+          "right": "2em",
+          "top": "0",
+        });
+      });
+
+      $("#l1").hover(function(){
+        $(this).attr('src','./img/main_cl/l1-hover.png');
+        $('.l1').css({
+          "width": "calc(55% + 64px)",
+          "left": "calc(2em - 26px)",
+          "top": "2.6em",
+        });
+        },
+        function(){
+        $(this).attr('src','./img/main_cl/l1.png');
+        $('.l1').css({
+          "width": "55%",
+          "left": "2em",
+          "top": "5.2em",
+        });
+      });
+
+      $("#l2").hover(function(){
+        $(this).attr('src','./img/main_cl/l2-hover.png');
+        $('.l2').css({
+          "width": "calc(38% + 78px)",
+          "left": "calc(4em - 39.5px)",
+          "top": "20.15em",
+        });
+        },
+        function(){
+        $(this).attr('src','./img/main_cl/l2.png');
+        $('.l2').css({
+          "width": "38%",
+          "left": "4em",
+          "top": "22.5em",
+        });
+      });
+
+      $("#r3").hover(function(){
+        $(this).attr('src','./img/main_cl/r3-hover.png');
+        $('.r3').css({
+          "width": "calc(40% + 77px)",
+          "right": "calc(19em - 41px)",
+          "top": "28em",
+        });
+        },
+        function(){
+        $(this).attr('src','./img/main_cl/r3.png');
+        $('.r3').css({
+          "width": "40%",
+          "right": "19em",
+          "top": "30.2em",
+        });
+      });
+
+      // $(".r2").hover(function() {
+      //   $(this).css('cursor','pointer');
+      // }, function() {
+      //     $(this).css('cursor','auto');
+      // });
+
+    </script>
   </body>
 </html>

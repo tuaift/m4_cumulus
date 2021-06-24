@@ -23,6 +23,9 @@ body {
   position: relative;
   background-color: #ececec;
   font-family: "Gramatika-Reg";
+  /* background-image: url('../img/main-bg.png');
+  background-size: cover;
+  opacity: 30%; */
 }
 
 body, html {
