@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Gramatika-Reg';
+  src: url('../fonts/Gramatika-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Gramatika-Sl';
+  src: url('../fonts/Gramatika-Slanted.otf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #ececec;
+  font-family: "Gramatika-Reg";
+}
+
+body, html {
+  height: 100%;
+}

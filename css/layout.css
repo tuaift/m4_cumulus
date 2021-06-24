@@ -1,0 +1,22 @@
+
+
+
+
+/* section {
+  margin-top: 23px;
+} */
+
+.logo {
+  margin: 23px;
+}
+
+.cloud-link {
+  display: block;
+  position: absolute;
+  right: 12vw;
+}
+
+.r1 {
+  width: 130%;
+  height: auto;
+}
