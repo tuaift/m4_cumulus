@@ -31,3 +31,61 @@ body {
 body, html {
   height: 100%;
 }
+
+a, p {
+  text-decoration: none;
+  color: #000;
+  font-size: 43px;
+}
+
+/* menu */
+
+.menu {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  /* background-color: green; */
+  bottom: 0;
+}
+
+.menu-button {
+  display: block;
+  margin: 20px 0px 23px 23px;
+}
+
+.menu-active {
+  display: none;
+  margin-left: 60px;
+  /* flex-direction: row; */
+}
+
+.menu-el {
+  display: flex;
+  flex-direction: column;
+  margin-right: 185px;
+  align-self: center;
+}
+
+.menu-el a:hover {
+  color: #a4a4a4;
+}
+
+.menu-3 {
+  align-self: flex-end;
+  margin-bottom: 16px;
+}
+
+.rot {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#btn {
+  -webkit-transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+
+.current-page {
+  font-family: 'Gramatika-Sl';
+}

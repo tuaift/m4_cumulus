@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cumulus — О проекте</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <style media="screen">
+      body {
+        background-image: url('./img/desc_bg.png');
+        background-size: cover;
+      }
+
+      p {
+        font-size: 24px;
+      }
+
+      .about {
+        display: inline-block;
+        position: absolute;
+        max-width: 423px;
+        right: calc(2em + 517px);
+      }
+
+      .about-2 {
+        max-width: 397px;
+        right: 2em;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      .menu-el a:hover {
+        color: white;
+        text-shadow: white 0 0 10px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="./img/logo.svg" alt="">
+    <div class="about about-1">
+      <p>Cumulus — студия, занимающаяся изучением и проектированием облаков</p>
+    </div>
+    <div class="about about-2">
+      <p>В своей работе мы вдохновляемся формами и поведением природных облаков, поэтому одним из ключевых этапов рабочего процесса является наблюдение </p>
+    </div>
+    <div class="menu">
+      <img  id="btn" class="menu-button menu-button-closed" src="./img/btn-white.svg" alt="">
+      <div class="menu-active">
+        <div class="menu-el menu-1">
+          <a class="current-page" href="#">о проекте</a>
+          <a href="#">исследование</a>
+        </div>
+        <div class="menu-el menu-2">
+          <a href="#">конструктор</a>
+          <a href="#">работы студии</a>
+        </div>
+        <div class="menu-el menu-3">
+          <a href="#">мерч</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $(".menu-button").click(function() {
+          if ($('.menu-active').is(':visible')) {
+            $('.menu-active').fadeOut(200, function () {
+                $('.menu-active').animate({
+                    'width': 'hide'
+                }, 200);
+            });
+        } else {
+          setTimeout(function() {
+            $('.menu-active').css('display', 'flex');
+        }, 100);
+      };
+        });
+      });
+
+      $("#btn").click(function() {
+        $(this).toggleClass("rot");
+      });
+
+
+    </script>
+  </body>
+</html>
