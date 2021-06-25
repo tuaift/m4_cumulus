@@ -65,7 +65,7 @@
 }
 
 #r1 {
-    cursor: url("../img/cursor/cursor-opr.png"), auto;
+    cursor: url("../img/cursor/point.png"), auto;
 }
 
 #r2 {
@@ -73,21 +73,21 @@
 }
 
 #r3 {
-    cursor: url("../img/cursor/cursor-works.png"), auto;
+    cursor: url("../img/cursor/point.png"), auto;
 }
 
 #r4 {
-    cursor: url("../img/cursor/cursor-address.png"), auto;
+    cursor: url("../img/cursor/point.png"), auto;
 }
 
 #l1 {
-    cursor: url("../img/cursor/cursor-issl.png"), auto;
+    cursor: url("../img/cursor/point.png"), auto;
 }
 
 #l2 {
-    cursor: url("../img/cursor/cursor-konstr.png"), auto;
+    cursor: url("../img/cursor/point.png"), auto;
 }
 
 #l3 {
-    cursor: url("../img/cursor/cursor-email.png"), auto;
+    cursor: url("../img/cursor/point.png"), auto;
 }
