@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cumulus — Исследование</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <style media="screen">
+
+
+    </style>
+  </head>
+  <body>
+    <a href="https://tuaift.github.io/m4_cumulus/"><img class="logo" src="./img/logo.svg" alt=""></a>
+
+
+
+
+    <div class="menu">
+      <img  id="btn" class="menu-button menu-button-closed" src="./img/menu-closed-b.svg" alt="">
+      <div class="menu-active">
+        <div class="menu-el menu-1">
+          <a href="#">о проекте</a>
+          <a class="current-page" href="#">исследование</a>
+        </div>
+        <div class="menu-el menu-2">
+          <a href="#">конструктор</a>
+          <a href="#">работы студии</a>
+        </div>
+        <div class="menu-el menu-3">
+          <a href="#">мерч</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+
+      $(document).ready(function(){
+        $(".menu-button").click(function() {
+          if ($('.menu-active').is(':visible')) {
+            $('.menu-active').fadeOut(200, function () {
+                $('.menu-active').animate({
+                    'width': 'hide'
+                }, 200);
+            });
+        } else {
+          setTimeout(function() {
+            $('.menu-active').css('display', 'flex');
+        }, 100);
+      };
+        });
+      });
+
+      $("#btn").click(function() {
+        $(this).toggleClass("rot");
+      });
+
+
+    </script>
+  </body>
+</html>

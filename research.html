@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cumulus — Исследование</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <style media="screen">
+      .res-container {
+        display: flex;
+        position: absolute;
+        /* justify-content: center; */
+        top: 32px;
+        width: 100%;
+        height: calc(100% - 32px);
+      }
+
+      .res-cl {
+        position: relative;
+        width: 100%;
+      }
+
+      #res-l {
+        margin-top: 40px;
+        margin-left: -8px;
+      }
+
+      #res-r {
+        margin-top: -20px;
+        width: 98%;
+      }
+
+      .menu-comment {
+        display: block;
+        font-family: 'Roboto';
+        max-width: 510px;
+        align-self: center;
+        margin-left: 60px;
+      }
+
+      .comm {
+        font-size: 18px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <a href="https://tuaift.github.io/m4_cumulus/"><img class="logo" src="./img/logo.svg" alt=""></a>
+
+    <div class="res-container">
+      <a href="https://tuaift.github.io/hse_css_animation/"><img class="res-cl" id="res-l" src="./img/research/res-l.png" alt=""></a>
+      <a href="#"><img class="res-cl" id="res-r" src="./img/research/res-r.png" alt=""></a>
+    </div>
+
+    <div class="menu">
+      <img  id="btn" class="menu-button menu-button-closed" src="./img/menu-closed-b.svg" alt="">
+      <div class="menu-comment">
+        <p class="comm">На этой странице собраны теоретические материалы, разработанные и оформленные нами во время исследовательских экспедиций</p>
+      </div>
+      <div class="menu-active">
+        <div class="menu-el menu-1">
+          <a href="#">о проекте</a>
+          <a class="current-page" href="#">исследование</a>
+        </div>
+        <div class="menu-el menu-2">
+          <a href="#">конструктор</a>
+          <a href="#">работы студии</a>
+        </div>
+        <div class="menu-el menu-3">
+          <a href="#">мерч</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $("#res-l").hover(function(){
+          $(this).attr('src','./img/research/res-l-hover.png');
+          }, function(){
+          $(this).attr('src','./img/research/res-l.png');
+        });
+      });
+
+      $(document).ready(function(){
+        $("#res-r").hover(function(){
+          $(this).attr('src','./img/research/res-r-hover.png');
+          }, function(){
+          $(this).attr('src','./img/research/res-r.png');
+        });
+      });
+
+
+      $(document).ready(function(){
+        $(".menu-button").click(function() {
+          if ($('.menu-active').is(':visible')) {
+            $('.menu-active').fadeOut(200, function () {
+                $('.menu-active').animate({
+                    'width': 'hide'
+                }, 200);
+            });
+        } else {
+          setTimeout(function() {
+            $('.menu-comment').css('display', 'none');
+            $('.menu-active').css('display', 'flex');
+        }, <1></1>00);
+      };
+        });
+      });
+
+      $("#btn").click(function() {
+        $(this).toggleClass("rot");
+      });
+
+
+    </script>
+  </body>
+</html>

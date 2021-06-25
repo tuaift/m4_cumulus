@@ -45,7 +45,7 @@ a, p {
   position: absolute;
   width: 100%;
   /* background-color: green; */
-  bottom: 0;
+  bottom: 10px;
 }
 
 .menu-button {
@@ -72,7 +72,7 @@ a, p {
 
 .menu-3 {
   align-self: flex-end;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .rot {
