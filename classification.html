@@ -8,13 +8,155 @@
     <link rel="stylesheet" href="./css/layout.css">
     <style media="screen">
 
+      ::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+      }
+
+      ::-webkit-scrollbar-button {
+        width: 1px;
+        height: 1px;
+      }
+
+      div {
+        box-sizing: border-box;
+      }
+
+      .horizontal-scroll-wrapper {
+        position: fixed;
+        display: block;
+        left: 0;
+        width: calc(50vh - 5px);
+        max-height: 100vw;
+        margin: 0;
+        padding-top: 1px;
+        /* background: #111; */
+        overflow-y: auto;
+        overflow-x: hidden;
+        transform: rotate(-90deg) translateY(-700px);
+        transform-origin: right top;
+      }
+
+      #s1 {
+        top: 0;
+        max-height: 100vw;
+        transform: rotate(-90deg) translateY(-700px);
+      }
+
+      #s2 {
+        top: 20vh;
+        width: 66vh;
+      }
+
+      #s3 {
+        top: 50vh;
+        transform: rotate(-90deg) translateY(-740px);
+      }
+
+      .horizontal-scroll-wrapper > div {
+        display: block;
+        padding: 5px;
+        transform: rotate(90deg);
+        transform-origin: right top;
+      }
+
+
+      .squares {
+    	  padding: 250px 0 0 0;
+    	}
+
+    	.squares > div {
+    	  width: 250px;
+    	  height: 250px;
+    	  margin: 10px 0;
+    	}
+
+      #l1-c1 {
+        margin-top: 60vw;
+        margin-left: 16vw;
+      }
+
+      .shlep img {
+        width: 300%;
+      }
+
+      #l1-c2 {
+        margin-top: 60vw;
+        margin-left: 9vw;
+      }
+
+      #l2-c1 {
+        margin-top: 4vw;
+        margin-left: 23vw;
+      }
+
+      #l2-c2 {
+        margin-top: 65vw;
+        margin-left: 14vw;
+      }
+
+      #l3-c1 {
+        margin-top: 50vw;
+        margin-left: 12vw;
+      }
+
+      #l3-c2 {
+        margin-top: 50vw;
+        margin-left: 3vw;
+      }
+
+      .logo {
+        position: absolute;
+      }
+
+      .dashed-line {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        width: 100vw;
+        height: 33vh;
+        background-image: linear-gradient(to right, #a4a4a4 55%, rgba(255,255,255,0) 0%);
+        background-position: bottom;
+        background-size: 35px 3px;
+        background-repeat: repeat-x;
+      }
+
+      .bottom {
+        height: 66vh;
+      }
 
     </style>
   </head>
   <body>
     <a href="https://tuaift.github.io/m4_cumulus/"><img class="logo" src="./img/logo.svg" alt=""></a>
 
+    <div class="dashed-line top"></div>
+    <div class="dashed-line bottom"></div>
 
+    <div class="horizontal-scroll-wrapper squares" id="s1">
+  	  <div class="shlep" id="l1-c1">
+        <img src="./img/class-clouds/l1-c1.png" alt="">
+      </div>
+  	  <div class="shlep" id="l1-c2">
+        <img src="./img/class-clouds/l1-c2.png" alt="">
+      </div>
+  	</div>
+  	<div class="horizontal-scroll-wrapper squares" id="s2">
+  	  <div class="shlep" id="l2-c1">
+        <img src="./img/class-clouds/l2-c1.png" alt="">
+      </div>
+  	  <div class="shlep" id="l2-c2">
+        <img src="./img/class-clouds/l2-c2.png" alt="">
+      </div>
+  	</div>
+  	<div class="horizontal-scroll-wrapper squares" id="s3">
+  	  <div class="shlep" id="l3-c1">
+        <img src="./img/class-clouds/l3-c1.png" alt="">
+      </div>
+  	  <div class="shlep" id="l3-c2">
+        <img src="./img/class-clouds/l3-c2.png" alt="">
+      </div>
+  	</div>
 
 
     <div class="menu">
